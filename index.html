@@ -1,0 +1,106 @@
+<DOCTYPE! HTML>
+  <html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title> bloggingoverborders/home </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="travel, asia, recommendations, blogging, www.bloggingoverborders.com">
+    <meta name="author" content="Justin Harker">
+    <meta http-equiv="refresh" content="200">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/data.js"></script>
+    </script>
+    <script>
+    function myFunction() {
+    var x = document.getElementById("right-aside-content");
+    if (x.style.display === "none") {
+    x.style.display = "block";
+  	} else {
+   	x.style.display = "none";
+ 	}
+   }
+   </script>
+
+
+  </head>
+
+
+<body onload="ajaxRequest('GET', 'php/main_article.php', articleHTML);">
+    <div id="wrapper">
+      <div class="header">
+	<div id="login-navigation">
+	<label>Administrator</label><a href="php/login.php">
+	<button type="submit">Login</button></a> <br>
+	</div>
+        <a href="http://www.bloggingoverborders.com/home"></a>
+        <h1> Blogging Over Borders </h1>
+        <p>By Derek Lichtensteiger</p>
+      </div>
+
+      <div class="top-nav">
+	<nav>
+        <ul>
+          <li> <a href="contact.html"> Contact</a> </li>
+          <li> <a href="index.html">Home</a> </li>
+          <li> <a href="image_gallery.html">Image Gallery<a/> </li>
+	  	<div class="dropdown">
+			<button class="dropbtn">Recent Articles</button>
+			<div class="dropdown-content">
+			<a href="#">Sapa, Vietnam</a>
+			<a href="#">Hanoi, Vietnam</a>
+	  		</div>
+		</div>
+	</ul>
+	</nav>  
+      </div> 
+
+<aside>
+  <img class="aside-image" src="img/2017/profile.jpg"  alt="picture of Derek"/>
+	<button id="aside-expand-button" onclick="myFunction()">About Me</button>
+	
+	<div id="right-aside-content">
+	<p>I was born in the Phillipines, raised in Thailand and currently live in Perth, Western Australia.</p> 
+	<p>My parents are from Hong Kong and Switzerland and I spent most of my childhood travelling through different countries. I went to primary school in a small town around 6 hours north of Perth with a population of approximately 2000 people.</p>
+	<p>It's no wonder the travel bug has bit me and encouraged me to go visit new and existing places!</p>
+	<p>My interests include travel and photography, and I am currently studying IT at Curtin University.</p>
+	<p>I wish to share some of my experiences with other people who share my passion for travel. I hope you enjoy my blog!</p>
+	</div>
+</aside>
+
+<article>
+
+   <div id="article"></div>
+	
+</article>
+
+<form method="post" action="php/subscribe.php" id="subscribe-form">
+       <div id="subscription-form-controls">
+       <legend>Like this article? Enter your email address to subscribe!</legend>
+            <fieldset>
+            <label for="email"><b>Email</b></label>
+            <input type="email" name="email" required>
+            <button type="submit">Subscribe</button>
+            </fieldset>
+       </div>
+</form>
+          
+<footer>
+	<h4>Copyright information/links:</h4> <br>
+        <p><small>&copy; All the content on this website is protected by copyright, and may not be shared without the expressed consent of the owner, Derek Lichtensteiger.<br>
+	Content includes all pictures, blog posts and reviews. This content may not be used commercially or for private use. If you have any questions about the use of the content, 
+	please visit the <a href="contact.html">Contact</a> page.</small></p><br>
+        <p><small>Website designed by Justin Harker - contact me @</small> <a href="mailto:justin.harker@student.curtin.edu.au?Subject=Hi%20Justin" target="_top"><i class="material-icons" 
+	style="font-size:24px;color:teal">email</i></a></p>
+</footer>
+
+</div>
+</body>
+
+
+</html>
+
