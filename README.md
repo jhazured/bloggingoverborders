@@ -2,11 +2,6 @@
 
 <p align="center"><University Project></p>
 
-## Links
-
-- [Repo](https://github.com/Rohit19060/<project-name> "<project-name> Repo")
-
-
 ## Built on a lamp stack using:
 
 - HTML
