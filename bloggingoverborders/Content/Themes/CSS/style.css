@@ -1,0 +1,581 @@
+/*reset style sheet - from Foundation Website Creation with HTML5, CSS3, and Javascript textbook*/
+
+html, body, div, span, object, iframe, 
+h1, h2, h3, h4, h5, h6, 
+p, blockquote, pre, abbr, address, cite, code, 
+del, dfn, em, img, ins, ins, kbd, q, samp, small, strong, 
+sub, var, b, i, dl, dt, dd, ol, ul, li, 
+fieldset, form, label, legend, table, caption, tbody, 
+thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, 
+menu, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+/* tell the browser to display the below elements as blocks, rather than inline elements */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+/*clear out the styling on lists i.e. remove bullets and numbers */
+
+nav ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after,
+  {
+  content: '';
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+/*standardise the display of tables and table borders*/
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+
+/*end of reset style sheet*/
+
+/*Include padding and border in the element's total width and height: */
+
+* {
+  box-sizing: border-box;
+}
+
+/*set up a Global wrapper with a width of 80% and add a background image, darken image*/
+
+#wrapper {
+  width: 80%;
+  margin: 0 auto;
+ 
+}
+
+/* set up responsive web design */
+
+/*set font size to 100% and line-height to 1em */
+body {
+  font-size: 100%;
+  line-height: 1em;
+  background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../Img/2017/Vietnam/vietnam4.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  background-attachment: fixed;
+  z-index: -1;
+}
+
+aside {
+  float: right;
+  width: 30%; /* The width is 30%, by default */
+  height: auto;
+  padding: 10px 10px 10px 10px;
+  border-right: 1px black solid;
+  border-left: 1px black solid;
+  border-bottom: 1px black solid;
+  background-color: teal;
+}
+
+article {
+  float: left;
+  width: 65%; /* The width is 65%, by default */
+  height: auto;
+  padding: 15px 15px 15px 15px;
+  background-color: teal;
+  border-right: 1px black solid;
+  border-left: 1px black solid;
+  border-bottom: 1px black solid;
+}
+
+#subscribe-form {
+  display: block;
+  float: left;
+  width: 65%; /* The width is 65%, by default */
+  margin: 0 auto;
+  height: auto;
+  color: white;
+  text-align: center;
+  padding: 15px 15px 15px 15px;
+  border: 1px black solid;
+  background-color: white;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) { 
+article, aside, #subscribe-form, #contact-form, #wrapper {
+    	width: 100%; /* The width is 100%, when the viewport is 600px or smaller */
+	font-size: 85%;
+	padding: 5px 5px 5px 5px;
+	
+  }
+}
+
+@media only screen and (max-width: 768px) {
+#login-navigation {
+    	display: none; /* If the screen size is 600px wide or less, hide the element */
+	visibility: hidden;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 768px) { 
+article, aside, #subscribe-form, #contact-form, #wrapper {
+    	width: 100%; /* The width is 100%, when the viewport is 600px or greater */
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+article, #subscribe-form, #contact-form {
+	padding: 5px 5px 5px 5px;
+	font-size: 90%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width:992px) {
+#wrapper {
+	width: 100%;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+#wrapper {
+    	width: 80%; /* The width is 80%, when the viewport is 992px or greater */
+  }
+}
+
+
+@media only screen and (min-width: 992px) {
+aside, #header, #footer, article {
+    	font-size: 100%;
+  }
+}
+
+
+
+
+/*format the header section*/
+
+.header {
+  display: block;
+  float: left;
+  margin: 0 auto;
+  padding: 10px 10px 10px 10px;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  background-color: white;
+  z-index: 1;
+  border-left: 1px black solid;
+  border-right: 1px black solid;
+}
+
+.header p {
+  color: black;
+  text-align: center;
+}
+
+/*format the top-nav section*/
+
+
+.top-nav {
+  	display: block;
+  	float: left;
+  	width: 100%;
+  	height: auto;
+  	border: 1px black solid;
+	font-family: "Lucida Sans Unicode", Lucida Grande, sans-serif;
+  	background-color: black;
+  	z-index: 2;
+}
+
+.top-nav ul {
+  list-style-type: none;
+}
+
+.top-nav li {
+  float: left;
+  padding: 15px 15px 15px 15px;
+  display: inline;
+}
+
+.top-nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+.top-nav li a:hover {
+  background-color: #111;
+}
+
+/*format the drop down list*/
+.dropbtn {
+	color: white;
+    	background-color: black;
+	display: inline;
+    	font-size: 1em;
+    	border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    	display: none;
+    	position: absolute;
+    	background-color: white;
+    	min-width: 160px;
+    	z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 15px 15px 15px 15px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+	background-color: black;
+}
+
+.dropdown:hover .dropdown-content {
+	background-color: black;
+    	display: block;
+}
+
+.dropdown:hover .dropbtn {
+    	background-color: black;
+	
+}
+
+/*format the login button and label*/
+
+#login-navigation {
+	display: block;	
+	position: absolute;
+	top: 0px;
+	right: 10%;
+	
+}
+
+/*set an aside image and center it with margin*/
+
+.aside-image {
+  float: center;
+  margin: 15px 15px 15px 15px;
+  max-width: 90%;
+  height: auto;
+}
+
+/*set an aside button so that users can manually expand/hide section*/
+#aside-expand-button {
+  display: block;
+  float: center;
+  font-size: 1em;
+  margin: 0 auto;
+}
+
+/*create a right and left class image object and float to right and left*/
+
+.right-image {
+  float: right;
+  margin: 10px 10px 10px 10px;
+  max-width: 50%;
+  height: auto;
+}
+
+.left-image {
+  float: left;
+  margin: 10px 10px 10px 10px;
+  max-width: 50%;
+  height: auto;
+}
+
+
+
+/*format form legend*/
+
+legend {
+  color: black;
+  font-size: 1em;
+  font-weight: normal;
+  font-style: normal;
+  font-family: "Lucida Sans Unicode", Lucida Grande, sans-serif;
+  line-height: 1.8em;
+  text-align: center;
+}
+
+
+
+/*format labels, buttons and input fields*/
+label, button, input, text {
+	font-size: 1em;
+	font-weight: normal;
+	font-style: normal;
+	font-family: "Lucida Sans Unicode", Lucida Grande, sans-serif;
+	line-height: 1.8em;
+	margin-right: 0.5em;
+	margin-left: 0.5em;
+	margin-bottom: 0.5em;
+	margin-top: 0.5em;
+	text-align: left;	
+	color: black;	
+	cursor: pointer;
+}
+
+
+/*create an footer section, clear float and set width to 100%*/
+
+footer {
+  display: block;
+  clear: both;
+  height: auto;
+  width: 100%;
+  padding: 5px 5px 5px 5px;
+  text-align: center;
+  line-height: 1em;
+  border-top: 1px solid black;
+  background-color: black;
+}
+
+/*center paragraph text and change font size*/
+
+footer p {
+  text-align: center;
+  font-size: 0.8em;
+}
+
+/*website title*/
+
+h1 {
+  font-size: 2.2em;
+  font-weight: normal;
+  font-style: normal;
+  font-family: "Lucida Sans Unicode", Lucida Grande, sans-serif;
+  line-height: 1.5em;
+  text-align: center;
+  text-transform: uppercase;
+  color: teal;
+}
+
+/*article title*/
+
+h2 {
+  font-size: 2.2em;
+  font-weight: normal;
+  font-style: normal;
+  font-family: "Lucida Sans Unicode", Lucida Grande, sans-serif;
+  line-height: 1.8em;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  text-decoration: underline;
+}
+
+/*aside title*/
+
+h3 {
+  font-size: 1.6em;
+  font-weight: bold;
+  font-style: normal;
+  font-family: "Lucida Sans Unicode", Lucida Grande, sans-serif;
+  line-height: 1.8em;
+  text-align: center;
+  text-transform: uppercase;
+  color: #66ffff;
+}
+
+/*footer title*/
+
+h4 {
+  font-size: 1.125em;
+  font-weight: normal;
+  font-style: normal;
+  font-family: "Lucida Sans Unicode", Lucida Grande, sans-serif;
+  line-height: 1.8em;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+}
+
+/*extra title*/
+
+h5 {
+  font-size: 1.125em;
+  font-weight: normal;
+  font-style: normal;
+  font-family: "Lucida Sans Unicode", Lucida Grande, sans-serif;
+  line-height: 1.8em;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+}
+
+/*page title*/
+
+h6 {
+  font-size: 2em;
+  font-weight: normal;
+  font-style: normal;
+  font-family: "Lucida Sans Unicode", Lucida Grande, sans-serif;
+  line-height: 1.8em;
+  text-align: center;
+  text-transform: uppercase;
+  color: black;
+}
+
+/*format paragraph text*/
+
+p {
+  font-size: 1em;
+  font-weight: normal;
+  font-style: normal;
+  font-family: "Lucida Sans Unicode", Lucida Grande, sans-serif;
+  line-height: 1.8em;
+  text-align: justify;
+  text-transform: none;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 1em;
+}
+
+/*format hyperlink text*/
+
+a:link {
+  color: white;
+}
+
+a:visited {
+  color: darkgrey;
+  background-color: cyan;
+}
+
+a:hover {
+  color: white;
+}
+
+a:active {
+  color: blue;
+}
+
+/*format span text*/
+
+span {
+  font-size: 1.125em;
+  font-weight: bold;
+  font-style: italic;
+  font-family: "Helvetica", geneva, serif;
+  color: white;
+  line-height: 1.5em;
+  text-align: inline;
+  text-decoration: underline;
+}
+
+/*format blockquote text*/
+
+blockquote p {
+  font-size: 1.125em;
+  font-weight: bold;
+  font-style: italic;
+  font-family: "Helvetica", geneva, serif;
+  color: skyblue;
+  line-height: 1.5em;
+  text-align: center;
+  text-decoration: none;
+}
+
+/*format cite text*/
+
+cite {
+  text-decoration: italic;
+}
+
+/* things to do
+1. site responsiveness test
+2. image gallery requires fixing
+5. lightbox - still to implement
+6. google maps
+
+
+try https://www.w3schools.com/howto/howto_css_blog_layout.asp
+

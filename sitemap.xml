@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>http://bloggingoverborders.com/</loc>
+  <lastmod>2018-05-19T08:12:26+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>http://bloggingoverborders.com/contact.html</loc>
+  <lastmod>2018-05-19T06:47:07+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://bloggingoverborders.com/index.html</loc>
+  <lastmod>2018-05-19T08:12:26+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://bloggingoverborders.com/image_gallery.html</loc>
+  <lastmod>2018-05-19T06:47:07+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://bloggingoverborders.com/login.php</loc>
+  <lastmod>2018-05-19T06:47:07+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>http://bloggingoverborders.com/dashboard.php</loc>
+  <lastmod>2018-05-19T06:47:07+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>http://bloggingoverborders.com/create_edit_feature.php</loc>
+  <lastmod>2018-05-19T06:47:07+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
+</urlset>

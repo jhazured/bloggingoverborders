@@ -1,0 +1,299 @@
+<DOCTYPE! HTML>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" /meta>
+	<title> bloggingoverborders/image_gallery </title>
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<meta name="keywords" content="travel, asia, recommendations, blogging, www.bloggingoverborders.com">
+    	<meta name="author" content="Justin Harker">
+    	<meta http-equiv="refresh" content="200">
+    	<meta name="google-site-verification" content="aM8n2s8vyE7-3C_KBex2ht-7QygtCkBhU7IT9hwaveM" />
+    	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+	<link rel="stylesheet" href="./bloggingoverborders/Content/Themes/CSS/style.css">
+    	<script type="text/javascript" src="./bloggingoverborders/includes/js/data.js"></script>
+    	</script>
+
+<style>
+* {box-sizing: border-box}
+
+
+#nav {
+	margin-bottom: 50px;
+}
+
+
+.mySlides {
+	display: none;
+}
+
+img {
+        width:700px;
+        height:500px;
+ }
+
+/* Slideshow container */
+.slideshow-container {
+	display: block;
+	float: center;
+  	max-width: 800px;
+	margin: 0 auto;
+}
+
+#slide-container {
+	display: block;
+	float:left:
+	width:100%;
+	height: 10%;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.prev {
+  position: absolute;
+  top: 65%;
+  left: 25%;
+  transform: translate(-25%, -50%);
+}
+
+.next {
+  position: absolute;
+  top: 50%;
+  right: 25%;
+  transform: translate(-25%, -50%);
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 175px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+</style>
+</head>
+
+
+<body>
+
+<div id="wrapper">
+      <div class="header">
+        <a href="http://www.bloggingoverborders.com/image_gallery"></a>
+        <h1> Blogging Over Borders </h1>
+        <h6>Image Gallery</h6>
+</div>
+
+<div class="top-nav">
+      <nav>
+        <ul>
+          <li> <a href="contact.html"> Contact</a> </li>
+          <li> <a href="index.html">Home</a> </li>
+          <li> <a href="image_gallery.html">Image Gallery<a/> </li>
+	  <div class="dropdown">
+		<button class="dropbtn">Select Album</button>
+		<div class="dropdown-content">
+		<a href="#">Sapa, Vietnam</a>
+		<a href="#">Hanoi, Vietnam</a>
+	  </div>
+	</ul>
+      </nav>
+		
+</div>
+
+<div class="slide-container"></div>
+<div class="slideshow-container">
+
+<div class="mySlides">
+  <div class="numbertext">1 / 9</div>
+  <img src="./bloggingoverborders/Content/Themes/Img/2017/Vietnam/halongbay1.jpg" style="width:100%" alt="halongbay1">
+  <div class="text">Caption One</div>
+</div>
+
+<div class="mySlides">
+  <div class="numbertext">2 / 9</div>
+  <img src="./bloggingoverborders/Content/Themes/Img/2017/Vietnam/halongbay2.jpg" style="width:100%"  alt="halongbay2">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides">
+  <div class="numbertext">3 / 9</div>
+  <img src="./bloggingoverborders/Content/Themes/Img/2017/Vietnam/sapa1.jpg" style="width:100%" alt="sapa1">
+  <div class="text">Caption Three</div>
+</div>
+
+<div class="mySlides">
+  <div class="numbertext">4 / 9</div>
+  <img src="./bloggingoverborders/Content/Themes/Img/2017/Vietnam/sapa2.jpg" style="width:100%" alt="sapa2">
+  <div class="text">Caption Four</div>
+</div>
+
+<div class="mySlides">
+  <div class="numbertext">5 / 9</div>
+  <img src="./bloggingoverborders/Content/Themes/Img/2017/Vietnam/vietnam1.jpg" style="width:100%" alt="vietnam1">
+  <div class="text">Caption Five</div>
+</div>
+
+<div class="mySlides">
+  <div class="numbertext">6 / 9</div>
+  <img src="./bloggingoverborders/Content/Themes/Img/2017/Vietnam/vietnam2.jpg" style="width:100%" alt="vietnam2">
+  <div class="text">Caption Six</div>
+</div>
+
+<div class="mySlides">
+  <div class="numbertext">7 / 9</div>
+  <img src="./bloggingoverborders/Content/Themes/Img/2017/Vietnam/vietnam3.jpg" style="width:100%" alt="vietnam3">
+  <div class="text">Caption Seven</div>
+</div>
+
+<div class="mySlides">
+  <div class="numbertext">8 / 9</div>
+  <img src="./bloggingoverborders/Content/Themes/Img/2017/Vietnam/vietnam4.jpg" style="width:100%" alt="vietnam4">
+  <div class="text">Caption Eight</div>
+</div>
+
+<div class="mySlides">
+  <div class="numbertext">9 / 9</div>
+  <img src="./bloggingoverborders/Content/Themes/Img/2017/Vietnam/vietnam5.jpg" style="width:100%" alt="vietnam5">
+  <div class="text">Caption Nine</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span> 
+  <span class="dot" onclick="currentSlide(6)"></span> 
+  <span class="dot" onclick="currentSlide(7)"></span> 
+  <span class="dot" onclick="currentSlide(8)"></span> 
+  <span class="dot" onclick="currentSlide(9)"></span> 
+</div>
+
+
+
+<script>
+
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+
+<footer>
+	<h4>Copyright information/links:</h4> <br>
+        <p><small>&copy; All the content on this website is protected by copyright, and may not be shared without the expressed consent of the owner, Derek Lichtensteiger.<br>
+	Content includes all pictures, blog posts and reviews. This content may not be used commercially or for private use. If you have any questions about the use of the content, please visit the <a href="contact.html"> Contact</a> page.</small></p><br>
+        <p><small>Website designed by Justin Harker - contact me @</small> <a href="mailto:justin.harker@student.curtin.edu.au?Subject=Hi%20Justin" target="_top"><i class="material-icons" style="font-size:24px;color:teal">email</i></a></p>
+</footer>
+
+</div>
+</body>	
+
+
+
+</html>
+
